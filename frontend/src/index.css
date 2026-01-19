@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+/* Aapka purana body style niche rehne dein */
+body {
+  background-color: #080808;
+  color: white;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
