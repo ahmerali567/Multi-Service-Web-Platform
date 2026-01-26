@@ -136,7 +136,7 @@ const AboutPage = () => (
         <h2 className="text-netwave-cyan font-mono uppercase tracking-[0.4em] text-[10px] md:text-xs mb-6 italic">Driven by Digital Excellence</h2>
         <h1 className="text-4xl md:text-[90px] font-black italic uppercase leading-[0.9] mb-10 tracking-tighter">Our Journey. <br /> Your success.</h1>
         <p className="text-gray-400 text-sm md:text-xl font-bold uppercase tracking-widest leading-relaxed border-l-4 border-netwave-cyan pl-6 md:pl-8 mb-12">
-          Since 2017 Netwave Solutions has committed itself to researching and developing the best digital technology that will help clients grow their brand.
+          Since 2017 Netwave Solution has committed itself to researching and developing the best digital technology that will help clients grow their brand.
         </p>
       </motion.div>
       <div className="relative rounded-[2rem] md:rounded-[4rem] overflow-hidden aspect-square w-full max-w-[500px]">
@@ -150,7 +150,7 @@ const ContactPage = () => (
   <div className="min-h-screen bg-[#050505] text-white pt-32 md:pt-56 pb-20">
     <section className="max-w-[1440px] mx-auto px-6 lg:px-20 grid lg:grid-cols-2 gap-16 md:gap-24 items-start text-white">
       <div className="max-w-xl text-center lg:text-left">
-        <h2 className="text-netwave-cyan font-mono uppercase tracking-[0.4em] text-[10px] md:text-xs mb-6 italic text-white text-white">Stay Tuned</h2>
+        <h2 className="text-netwave-cyan font-mono uppercase tracking-[0.4em] text-[10px] md:text-xs mb-6 italic text-white">Stay Tuned</h2>
         <h1 className="text-5xl md:text-[120px] font-black italic uppercase leading-[0.8] mb-16 tracking-tighter text-white">Get In <br /> Touch.</h1>
         <div className="space-y-8 md:space-y-12">
           <div className="flex flex-col md:flex-row items-center lg:items-start gap-4 md:gap-8 group">
@@ -264,29 +264,46 @@ const MainPage = ({ loading, slideIndex, scrollToContact }) => (
 
     {/* 1. SERVICES GRID */}
     <section id="services" className="max-w-7xl mx-auto px-6 py-24 md:py-32 text-white border-t border-white/5">
-      <motion.div className="mb-16 md:mb-20 text-center lg:text-left"><h2 className="text-netwave-cyan font-mono uppercase tracking-[0.4em] text-[10px] md:text-xs mb-4 italic text-white text-white text-white">Core Capabilities</h2><h3 className="text-4xl md:text-8xl font-black italic uppercase leading-none text-white text-white text-white">Engineering<br />The Future.</h3></motion.div>
+      <motion.div className="mb-16 md:mb-20 text-center lg:text-left"><h2 className="text-netwave-cyan font-mono uppercase tracking-[0.4em] text-[10px] md:text-xs mb-4 italic text-white">Core Capabilities</h2><h3 className="text-4xl md:text-8xl font-black italic uppercase leading-none text-white">Engineering<br />The Future.</h3></motion.div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
         {services.map((s, i) => (
-          <Link key={i} to={`/service/${s.id}`}><motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }} viewport={{ once: true }} className="p-8 md:p-10 bg-[#0a0a0a] border border-white/5 rounded-[2rem] md:rounded-[3rem] hover:border-netwave-cyan/50 transition-all group relative overflow-hidden h-full text-white"><div className="absolute -right-4 -top-4 w-24 h-24 bg-netwave-cyan/5 blur-3xl group-hover:bg-netwave-cyan/10 transition-colors text-white text-white" /><div className="text-netwave-cyan mb-6 md:mb-8 group-hover:scale-110 transition-transform text-white">{s.icon}</div><h4 className="text-xl md:text-2xl font-black mb-4 italic uppercase tracking-tighter text-white">{s.title}</h4><p className="text-gray-500 text-[10px] md:text-sm leading-relaxed uppercase font-bold tracking-widest text-white">{s.desc}</p></motion.div></Link>
+          <Link key={i} to={`/service/${s.id}`}><motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }} viewport={{ once: true }} className="p-8 md:p-10 bg-[#0a0a0a] border border-white/5 rounded-[2rem] md:rounded-[3rem] hover:border-netwave-cyan/50 transition-all group relative overflow-hidden h-full text-white"><div className="absolute -right-4 -top-4 w-24 h-24 bg-netwave-cyan/5 blur-3xl group-hover:bg-netwave-cyan/10 transition-colors" /><div className="text-netwave-cyan mb-6 md:mb-8 group-hover:scale-110 transition-transform">{s.icon}</div><h4 className="text-xl md:text-2xl font-black mb-4 italic uppercase tracking-tighter text-white">{s.title}</h4><p className="text-gray-500 text-[10px] md:text-sm leading-relaxed uppercase font-bold tracking-widest text-white">{s.desc}</p></motion.div></Link>
         ))}
       </div>
     </section>
 
     {/* 2. INFRASTRUCTURE */}
     <section className="max-w-7xl mx-auto px-6 py-32 border-t border-white/5 relative overflow-hidden text-white">
-      <div className="absolute -right-20 top-1/2 w-96 h-96 bg-netwave-cyan/5 blur-[120px] rounded-full text-white" />
+      <div className="absolute -right-20 top-1/2 w-96 h-96 bg-netwave-cyan/5 blur-[120px] rounded-full" />
       <div className="grid lg:grid-cols-2 gap-20 items-center">
-        <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} className="text-white"><h2 className="text-netwave-cyan font-mono uppercase tracking-[0.4em] text-sm mb-4 italic text-white">Infrastructure</h2><h3 className="text-5xl md:text-7xl font-black italic uppercase mb-8 tracking-tighter text-white">Global Fiber backbone.</h3><p className="text-gray-400 text-lg leading-relaxed mb-10 uppercase font-bold tracking-widest leading-relaxed border-l-4 border-netwave-cyan pl-6">Our Tier-1 network architecture is engineered for zero-latency performance. We provide the foundational data pathways for modern digital commerce.</p>
-          <div className="space-y-6 text-white">{[{ label: "End-to-End Encryption", val: "Enterprise Grade" }, { label: "Network Availability", val: "99.99% Uptime" }, { label: "Monitoring", val: "24/7 Global" }].map((item, i) => (<div key={i} className="flex justify-between items-center border-b border-white/5 pb-4 text-white"><span className="text-xs uppercase tracking-widest font-bold text-gray-500">{item.label}</span><span className="text-xs uppercase tracking-widest font-black text-netwave-cyan">{item.val}</span></div>))}</div>
+        <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }}>
+          <h2 className="text-netwave-cyan font-mono uppercase tracking-[0.4em] text-sm mb-4 italic text-white">Infrastructure</h2>
+          <h3 className="text-5xl md:text-7xl font-black italic uppercase mb-8 tracking-tighter text-white">Global Fiber backbone.</h3>
+          <p className="text-gray-400 text-lg leading-relaxed mb-10 uppercase font-bold tracking-widest leading-relaxed border-l-4 border-netwave-cyan pl-6">Our Tier-1 network architecture is engineered for zero-latency performance. We provide the foundational data pathways for modern digital commerce.</p>
+          <div className="space-y-6">
+            {[{ label: "End-to-End Encryption", val: "Enterprise Grade" }, { label: "Network Availability", val: "99.99% Uptime" }, { label: "Monitoring", val: "24/7 Global" }].map((item, i) => (
+              <div key={i} className="flex justify-between items-center border-b border-white/5 pb-4">
+                <span className="text-xs uppercase tracking-widest font-bold text-gray-500">{item.label}</span>
+                <span className="text-xs uppercase tracking-widest font-black text-netwave-cyan">{item.val}</span>
+              </div>
+            ))}
+          </div>
         </motion.div>
-        <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} className="bg-[#0a0a0a] p-2 rounded-[3rem] border border-white/5 overflow-hidden"><div className="aspect-video bg-gradient-to-br from-netwave-cyan/10 to-transparent flex items-center justify-center relative group"><Globe className="w-32 h-32 text-netwave-cyan/20 group-hover:text-netwave-cyan/40 transition-all duration-700 group-hover:scale-110" /><div className="absolute inset-0 flex items-center justify-center"><div className="w-64 h-64 border border-netwave-cyan/5 rounded-full animate-ping text-white" /></div></div></motion.div>
+        <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} className="bg-[#0a0a0a] p-2 rounded-[3rem] border border-white/5 overflow-hidden">
+          <div className="aspect-video bg-gradient-to-br from-netwave-cyan/10 to-transparent flex items-center justify-center relative group">
+            <Globe className="w-32 h-32 text-netwave-cyan/20 group-hover:text-netwave-cyan/40 transition-all duration-700 group-hover:scale-110" />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-64 h-64 border border-netwave-cyan/5 rounded-full animate-ping" />
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
 
     {/* 3. WEB & SOFTWARE */}
     <section className="py-32 border-t border-white/5 text-white">
-      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center text-white">
-        <div className="order-2 lg:order-1 text-white">
+      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
+        <div className="order-2 lg:order-1">
           <h2 className="text-netwave-cyan font-mono uppercase text-sm mb-4 italic text-white">Elite Engineering</h2>
           <h3 className="text-5xl font-black italic uppercase text-white mb-8 tracking-tighter leading-none">Web & <br />App Development.</h3>
           <p className="text-gray-400 text-lg uppercase font-bold mb-8 leading-relaxed border-l-4 border-netwave-cyan pl-6">Architecting complex custom software and high-performance applications with modern tech stacks like Next.js and Python.</p>
@@ -301,13 +318,13 @@ const MainPage = ({ loading, slideIndex, scrollToContact }) => (
     {/* 4. MARKETING SECTION */}
     <section className="bg-white/5 py-32 text-white border-y border-white/5">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
-        <div className="relative rounded-[3rem] overflow-hidden border border-white/10 aspect-video group text-white">
+        <div className="relative rounded-[3rem] overflow-hidden border border-white/10 aspect-video group">
           <img src="https://images.pexels.com/photos/3127880/pexels-photo-3127880.jpeg" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="Marketing" />
         </div>
         <div>
           <h2 className="text-netwave-cyan font-mono uppercase text-sm mb-4 italic text-white">Marketing Mastery</h2>
-          <h3 className="text-5xl font-black italic uppercase text-white mb-8 tracking-tighter leading-none text-white">Growth <br />Dominance.</h3>
-          <p className="text-gray-400 text-lg uppercase font-bold mb-8 leading-relaxed border-l-4 border-netwave-cyan pl-6 text-white text-white">We utilize deep analytics and high-conversion strategies to scale your brand presence globally.</p>
+          <h3 className="text-5xl font-black italic uppercase text-white mb-8 tracking-tighter leading-none">Growth <br />Dominance.</h3>
+          <p className="text-gray-400 text-lg uppercase font-bold mb-8 leading-relaxed border-l-4 border-netwave-cyan pl-6">We utilize deep analytics and high-conversion strategies to scale your brand presence globally.</p>
           <div className="grid grid-cols-2 gap-6">
             <div><h4 className="text-netwave-cyan font-black text-2xl italic">ROI</h4><p className="text-gray-500 text-[10px] uppercase font-bold tracking-widest">Focused Campaigns</p></div>
             <div><h4 className="text-netwave-cyan font-black text-2xl italic">DATA</h4><p className="text-gray-500 text-[10px] uppercase font-bold tracking-widest">Driven Analysis</p></div>
@@ -318,11 +335,18 @@ const MainPage = ({ loading, slideIndex, scrollToContact }) => (
 
     {/* 6. Methodology Section */}
     <section className="py-32 text-white">
-      <div className="max-w-7xl mx-auto px-6 text-white text-white text-white">
-        <div className="max-w-2xl mb-20 text-white text-white text-white"><h2 className="text-netwave-cyan font-mono uppercase tracking-[0.4em] text-sm mb-4 italic text-white text-white text-white text-white">Our Methodology</h2><h3 className="text-5xl md:text-7xl font-black italic uppercase leading-none text-white text-white text-white">How We Lead Projects to Success.</h3></div>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 text-white">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-2xl mb-20">
+          <h2 className="text-netwave-cyan font-mono uppercase tracking-[0.4em] text-sm mb-4 italic text-white">Our Methodology</h2>
+          <h3 className="text-5xl md:text-7xl font-black italic uppercase leading-none text-white">How We Lead Projects to Success.</h3>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {[{ step: "01", title: "Strategic Discovery", desc: "Uncovering your core business DNA to align technical architecture." }, { step: "02", title: "Blueprint Stage", desc: "Architecting a high-precision roadmap engineered for massive scalability." }, { step: "03", title: "Elite Engineering", desc: "Crafting pixel-perfect, high-performance systems with rigorous quality." }, { step: "04", title: "Market Dominance", desc: "Seamless deployment followed by 24/7 hyper-optimization." }].map((item, i) => (
-            <motion.div key={i} initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.2 }} className="relative group text-white text-white text-white text-white"><div className="text-6xl font-black text-white/5 group-hover:text-netwave-cyan/20 transition-colors absolute -top-8 -left-4 italic text-white"> {item.step}</div><h4 className="text-xl font-black uppercase italic mb-4 relative z-10 tracking-tighter text-white">{item.title}</h4><p className="text-gray-500 text-sm leading-relaxed uppercase font-bold tracking-widest text-white text-white">{item.desc}</p></motion.div>
+            <motion.div key={i} initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.2 }} className="relative group text-white">
+              <div className="text-6xl font-black text-white/5 group-hover:text-netwave-cyan/20 transition-colors absolute -top-8 -left-4 italic"> {item.step}</div>
+              <h4 className="text-xl font-black uppercase italic mb-4 relative z-10 tracking-tighter text-white">{item.title}</h4>
+              <p className="text-gray-500 text-sm leading-relaxed uppercase font-bold tracking-widest text-white">{item.desc}</p>
+            </motion.div>
           ))}
         </div>
       </div>
@@ -365,7 +389,7 @@ const MainPage = ({ loading, slideIndex, scrollToContact }) => (
         {[1, 2].map((i) => (
           <div key={i} className="bg-[#0a0a0a] p-12 rounded-[3rem] border border-white/5 relative">
             <Quote size={40} className="text-netwave-cyan/20 absolute top-8 right-8" />
-            <p className="text-gray-400 text-lg uppercase font-bold italic mb-8 leading-relaxed text-white">"The level of technical precision provided by Netwave Solutions exceeded our global expectations."</p>
+            <p className="text-gray-400 text-lg uppercase font-bold italic mb-8 leading-relaxed text-white">"The level of technical precision provided by Netwave Solution exceeded our global expectations."</p>
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 bg-white/10 rounded-full" />
               <div><p className="font-black uppercase italic text-white">Technical Director</p><p className="text-netwave-cyan text-[10px] font-bold uppercase tracking-widest">Global Corp</p></div>
@@ -378,7 +402,7 @@ const MainPage = ({ loading, slideIndex, scrollToContact }) => (
     {/* 9. INQUIRY */}
     <section id="contact" className="max-w-7xl mx-auto px-6 py-24 md:py-40 text-white border-t border-white/5">
       <div className="grid lg:grid-cols-2 gap-16 md:gap-20 items-center">
-        <div className="text-center lg:text-left text-white text-white"><h2 className="text-netwave-cyan font-mono uppercase tracking-widest mb-6 italic text-white text-white">Inquiry</h2><h3 className="text-5xl md:text-[100px] font-black italic uppercase mb-12 leading-[0.8] tracking-tighter text-white">Build<br />Your Vision.</h3></div>
+        <div className="text-center lg:text-left text-white"><h2 className="text-netwave-cyan font-mono uppercase tracking-widest mb-6 italic text-white">Inquiry</h2><h3 className="text-5xl md:text-[100px] font-black italic uppercase mb-12 leading-[0.8] tracking-tighter text-white">Build<br />Your Vision.</h3></div>
         <motion.form initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} className="bg-[#0a0a0a] p-8 md:p-16 rounded-[2rem] md:rounded-[4rem] border border-white/5 space-y-8 text-white" onSubmit={handleSubmit}>
           <input name="first_name" type="text" placeholder="FIRST NAME" className="w-full bg-transparent border-b border-white/10 py-4 focus:border-netwave-cyan outline-none transition uppercase text-[10px] md:text-xs tracking-widest italic text-white font-bold" required />
           <input name="last_name" type="text" placeholder="LAST NAME" className="w-full bg-transparent border-b border-white/10 py-4 focus:border-netwave-cyan outline-none transition uppercase text-[10px] md:text-xs tracking-widest italic text-white font-bold" />
@@ -404,26 +428,26 @@ function App() {
   const scrollToContact = () => { const section = document.getElementById('contact'); if (section) section.scrollIntoView({ behavior: 'smooth' }); };
 
   return (
-    <div className="bg-[#050505] text-white font-sans selection:bg-netwave-cyan selection:text-black scroll-smooth overflow-x-hidden text-white text-white text-white">
+    <div className="bg-[#050505] text-white font-sans selection:bg-netwave-cyan selection:text-black scroll-smooth overflow-x-hidden text-white">
       <ScrollToTop />
       <nav className="fixed w-full z-[80] bg-black/40 backdrop-blur-2xl border-b border-white/5 text-white">
         <div className="max-w-[1440px] mx-auto px-6 py-4 flex justify-between items-center text-white">
           <Link to="/" className="flex items-center gap-4 group cursor-pointer text-white">
             <img src="/logo.png" alt="Netwave" className="h-14 md:h-24 w-auto object-contain transition-all hover:scale-110 text-white" />
-            <div className="flex flex-col leading-none text-white text-white"><span className="text-lg md:text-2xl font-black italic uppercase text-white">Netwave</span><span className="text-netwave-cyan text-[7px] md:text-[9px] uppercase tracking-[0.4em] font-bold text-white text-white">Solutions</span></div>
+            <div className="flex flex-col leading-none text-white"><span className="text-lg md:text-2xl font-black italic uppercase text-white">Netwave</span><span className="text-netwave-cyan text-[7px] md:text-[9px] uppercase tracking-[0.4em] font-bold text-white">Solution</span></div>
           </Link>
           <div className="hidden lg:flex items-center gap-10 text-white">
-            <Link to="/" className="text-[11px] uppercase tracking-[0.2em] font-bold hover:text-netwave-cyan transition-all text-white text-white text-white">Home</Link>
-            <div className="relative h-full py-2 cursor-pointer text-white text-white" onMouseEnter={() => setIsServicesOpen(true)} onMouseLeave={() => setIsServicesOpen(false)}>
-              <div className="flex items-center gap-1 text-[11px] uppercase tracking-[0.2em] font-bold hover:text-netwave-cyan transition-all italic text-white text-white text-white">Services <ChevronDown size={12} className={`transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''}`} /></div>
+            <Link to="/" className="text-[11px] uppercase tracking-[0.2em] font-bold hover:text-netwave-cyan transition-all text-white">Home</Link>
+            <div className="relative h-full py-2 cursor-pointer text-white" onMouseEnter={() => setIsServicesOpen(true)} onMouseLeave={() => setIsServicesOpen(false)}>
+              <div className="flex items-center gap-1 text-[11px] uppercase tracking-[0.2em] font-bold hover:text-netwave-cyan transition-all italic text-white">Services <ChevronDown size={12} className={`transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''}`} /></div>
               <AnimatePresence>
                 {isServicesOpen && (
-                  <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 10 }} className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[600px] bg-[#0a0a0a] border border-white/10 rounded-[2rem] p-8 shadow-2xl backdrop-blur-3xl text-white text-white text-white text-white">
-                    <div className="grid grid-cols-2 gap-6 text-white text-white text-white">
+                  <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 10 }} className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[600px] bg-[#0a0a0a] border border-white/10 rounded-[2rem] p-8 shadow-2xl backdrop-blur-3xl text-white">
+                    <div className="grid grid-cols-2 gap-6 text-white">
                       {services.map((s, idx) => (
-                        <Link key={idx} to={`/service/${s.id}`} onClick={() => setIsServicesOpen(false)} className="flex items-start gap-4 p-4 rounded-2xl hover:bg-white/5 group transition-all text-white text-white">
-                          <div className="text-netwave-cyan scale-75 group-hover:scale-90 transition-transform text-white text-white text-white" />
-                          <div className="text-white text-white text-white text-white text-white text-white text-white"><div className="text-[10px] font-black uppercase tracking-widest text-white group-hover:text-netwave-cyan">{s.title}</div><div className="text-[9px] text-gray-500 mt-1 uppercase tracking-tighter text-white">Premium Solutions</div></div>
+                        <Link key={idx} to={`/service/${s.id}`} onClick={() => setIsServicesOpen(false)} className="flex items-start gap-4 p-4 rounded-2xl hover:bg-white/5 group transition-all text-white">
+                          <div className="text-netwave-cyan scale-75 group-hover:scale-90 transition-transform text-white" />
+                          <div className="text-white"><div className="text-[10px] font-black uppercase tracking-widest text-white group-hover:text-netwave-cyan">{s.title}</div><div className="text-[9px] text-gray-500 mt-1 uppercase tracking-tighter text-white">Premium Solutions</div></div>
                         </Link>
                       ))}
                     </div>
@@ -431,12 +455,12 @@ function App() {
                 )}
               </AnimatePresence>
             </div>
-            <Link to="/about" className="text-[11px] uppercase tracking-[0.2em] font-bold hover:text-netwave-cyan transition-all text-white text-white text-white">About</Link>
-            <Link to="/contact" className="text-[11px] uppercase tracking-[0.2em] font-bold hover:text-netwave-cyan transition-all uppercase italic text-white text-white text-white">Contact</Link>
+            <Link to="/about" className="text-[11px] uppercase tracking-[0.2em] font-bold hover:text-netwave-cyan transition-all text-white">About</Link>
+            <Link to="/contact" className="text-[11px] uppercase tracking-[0.2em] font-bold hover:text-netwave-cyan transition-all uppercase italic text-white">Contact</Link>
           </div>
           <div className="flex items-center gap-4 text-white">
             <button onClick={scrollToContact} className="hidden md:block bg-white text-black px-8 py-3 rounded-full text-[11px] font-black uppercase tracking-widest hover:bg-netwave-cyan transition-all italic shadow-xl">Get Quote</button>
-            <button onClick={() => setIsMobMenuOpen(true)} className="lg:hidden text-white p-2 text-white text-white text-white"><Menu size={28} /></button>
+            <button onClick={() => setIsMobMenuOpen(true)} className="lg:hidden text-white p-2 text-white"><Menu size={28} /></button>
           </div>
         </div>
       </nav>
@@ -444,17 +468,17 @@ function App() {
       <AnimatePresence>
         {isMobMenuOpen && (
           <>
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setIsMobMenuOpen(false)} className="fixed inset-0 bg-black/80 backdrop-blur-md z-[90] text-white text-white text-white" />
-            <motion.div initial={{ x: '100%' }} animate={{ x: 0 }} exit={{ x: '100%' }} transition={{ type: 'spring', damping: 25, stiffness: 200 }} className="fixed inset-y-0 right-0 w-[75%] md:w-[400px] bg-[#080808] z-[100] p-8 border-l border-white/5 shadow-2xl flex flex-col text-white text-white">
-              <button onClick={() => setIsMobMenuOpen(false)} className="self-end p-2 text-gray-500 hover:text-netwave-cyan transition-colors text-white text-white"><X size={24} /></button>
-              <div className="flex flex-col gap-6 mt-12 text-white text-white">
-                <Link to="/" onClick={() => setIsMobMenuOpen(false)} className="text-lg font-black italic uppercase tracking-widest text-white hover:text-netwave-cyan transition-all text-white text-white text-white text-white">Home</Link>
-                <div className="border-y border-white/5 py-4 text-white text-white">
-                  <button onClick={() => setIsMobServicesOpen(!isMobServicesOpen)} className="text-lg font-black italic uppercase tracking-widest text-white flex items-center justify-between w-full hover:text-netwave-cyan transition-all text-white text-white text-white">Services <ChevronDown size={18} className={`transition-transform duration-300 ${isMobServicesOpen ? "rotate-180" : ""}`} /></button>
-                  <AnimatePresence>{isMobServicesOpen && (<motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="overflow-hidden pl-4 mt-4 space-y-4 border-l border-netwave-cyan/20 text-white text-white text-white">{services.map(s => (<Link key={s.id} to={`/service/${s.id}`} onClick={() => setIsMobMenuOpen(false)} className="block text-[10px] text-gray-500 font-black uppercase tracking-[0.2em] hover:text-netwave-cyan transition-colors text-white text-white text-white text-white">{s.title}</Link>))}</motion.div>)}</AnimatePresence>
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setIsMobMenuOpen(false)} className="fixed inset-0 bg-black/80 backdrop-blur-md z-[90] text-white" />
+            <motion.div initial={{ x: '100%' }} animate={{ x: 0 }} exit={{ x: '100%' }} transition={{ type: 'spring', damping: 25, stiffness: 200 }} className="fixed inset-y-0 right-0 w-[75%] md:w-[400px] bg-[#080808] z-[100] p-8 border-l border-white/5 shadow-2xl flex flex-col text-white">
+              <button onClick={() => setIsMobMenuOpen(false)} className="self-end p-2 text-gray-500 hover:text-netwave-cyan transition-colors text-white"><X size={24} /></button>
+              <div className="flex flex-col gap-6 mt-12 text-white">
+                <Link to="/" onClick={() => setIsMobMenuOpen(false)} className="text-lg font-black italic uppercase tracking-widest text-white hover:text-netwave-cyan transition-all text-white">Home</Link>
+                <div className="border-y border-white/5 py-4 text-white">
+                  <button onClick={() => setIsMobServicesOpen(!isMobServicesOpen)} className="text-lg font-black italic uppercase tracking-widest text-white flex items-center justify-between w-full hover:text-netwave-cyan transition-all text-white">Services <ChevronDown size={18} className={`transition-transform duration-300 ${isMobServicesOpen ? "rotate-180" : ""}`} /></button>
+                  <AnimatePresence>{isMobServicesOpen && (<motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="overflow-hidden pl-4 mt-4 space-y-4 border-l border-netwave-cyan/20 text-white">{services.map(s => (<Link key={s.id} to={`/service/${s.id}`} onClick={() => setIsMobMenuOpen(false)} className="block text-[10px] text-gray-500 font-black uppercase tracking-[0.2em] hover:text-netwave-cyan transition-colors text-white">{s.title}</Link>))}</motion.div>)}</AnimatePresence>
                 </div>
-                <Link to="/about" onClick={() => setIsMobMenuOpen(false)} className="text-lg font-black italic uppercase tracking-widest text-white hover:text-netwave-cyan transition-all text-white text-white">About</Link>
-                <Link to="/contact" onClick={() => setIsMobMenuOpen(false)} className="text-xl font-black italic uppercase tracking-widest text-left text-white hover:text-netwave-cyan transition-all text-white text-white text-white text-white">Contact</Link>
+                <Link to="/about" onClick={() => setIsMobMenuOpen(false)} className="text-lg font-black italic uppercase tracking-widest text-white hover:text-netwave-cyan transition-all text-white">About</Link>
+                <Link to="/contact" onClick={() => setIsMobMenuOpen(false)} className="text-xl font-black italic uppercase tracking-widest text-left text-white hover:text-netwave-cyan transition-all text-white">Contact</Link>
                 <button onClick={() => { setIsMobMenuOpen(false); scrollToContact(); }} className="group flex items-center justify-between bg-white text-black py-4 px-6 rounded-xl font-black uppercase text-[10px] tracking-[0.3em] mt-8 shadow-xl hover:bg-netwave-cyan transition-all active:scale-95 text-black shadow-2xl"><span>Get a Quote</span><ArrowRight size={14} className="group-hover:translate-x-1 transition-transform text-black" /></button>
               </div>
             </motion.div>
@@ -470,13 +494,13 @@ function App() {
       </Routes>
 
       <footer className="bg-[#030303] pt-24 pb-12 border-t border-white/5 text-white">
-        <div className="max-w-[1440px] mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16 text-white text-white text-white text-white text-white text-white">
-          <div className="col-span-1 text-center lg:text-left text-white text-white"><Link to="/"><img src="/logo.png" className="h-24 md:h-32 w-auto mb-8 mx-auto lg:mx-0 object-contain text-white text-white text-white text-white" alt="Netwave Solutions" /></Link><p className="text-gray-500 text-[10px] leading-relaxed max-w-xs uppercase tracking-tighter italic font-medium mx-auto lg:mx-0 text-white text-white text-white text-white">Elite digital infrastructure and software engineering globally.</p></div>
-          <div className="text-center lg:text-left text-white text-white text-white"><h5 className="text-netwave-cyan font-black mb-6 uppercase tracking-[0.3em] text-[10px] italic text-white text-white text-white">Expertise</h5><ul className="text-gray-400 space-y-4 text-[10px] font-bold uppercase tracking-widest text-white text-white text-white">{services.map(s => <li key={s.id}><Link to={`/service/${s.id}`} className="hover:text-white transition uppercase text-white text-white text-white">{s.title}</Link></li>)}</ul></div>
-          <div className="text-center lg:text-left text-white text-white text-white text-white text-white"><h5 className="text-netwave-cyan font-black mb-6 uppercase tracking-[0.3em] text-[10px] italic text-white text-white text-white text-white text-white text-white">Corporate</h5><ul className="text-gray-400 space-y-4 text-[10px] font-bold uppercase tracking-widest text-white text-white text-white text-white"><li><Link to="/about" className="hover:text-white transition text-white text-white text-white text-white text-white text-white">About Netwave</Link></li><li><Link to="/" className="hover:text-white transition text-white text-white text-white text-white text-white text-white">Privacy Policy</Link></li><li><Link to="/contact" className="hover:text-white uppercase transition tracking-widest text-white text-white text-white text-white">Contact Us</Link></li><li><Link to="/" className="hover:text-white transition text-white text-white text-white">Home Page</Link></li></ul></div>
-          <div id="contact-info" className="text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white"><h5 className="text-netwave-cyan font-black mb-8 uppercase tracking-[0.3em] text-[10px] italic text-white text-white text-white text-white">Contact </h5><div className="flex items-center gap-4 text-gray-400 text-[11px] font-bold uppercase transition hover:text-white tracking-widest italic leading-relaxed break-all text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white"><Mail size={14} className="text-netwave-cyan text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white" /><span>office@netwavesolutions.com</span></div></div>
+        <div className="max-w-[1440px] mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16 text-white">
+          <div className="col-span-1 text-center lg:text-left text-white"><Link to="/"><img src="/logo.png" className="h-24 md:h-32 w-auto mb-8 mx-auto lg:mx-0 object-contain text-white" alt="Netwave Solution" /></Link><p className="text-gray-500 text-[10px] leading-relaxed max-w-xs uppercase tracking-tighter italic font-medium mx-auto lg:mx-0 text-white">Elite digital infrastructure and software engineering globally.</p></div>
+          <div className="text-center lg:text-left text-white"><h5 className="text-netwave-cyan font-black mb-6 uppercase tracking-[0.3em] text-[10px] italic text-white">Expertise</h5><ul className="text-gray-400 space-y-4 text-[10px] font-bold uppercase tracking-widest text-white">{services.map(s => <li key={s.id}><Link to={`/service/${s.id}`} className="hover:text-white transition uppercase text-white">{s.title}</Link></li>)}</ul></div>
+          <div className="text-center lg:text-left text-white"><h5 className="text-netwave-cyan font-black mb-6 uppercase tracking-[0.3em] text-[10px] italic text-white">Corporate</h5><ul className="text-gray-400 space-y-4 text-[10px] font-bold uppercase tracking-widest text-white"><li><Link to="/about" className="hover:text-white transition text-white">About Netwave</Link></li><li><Link to="/" className="hover:text-white transition text-white">Privacy Policy</Link></li><li><Link to="/contact" className="hover:text-white uppercase transition tracking-widest text-white">Contact Us</Link></li><li><Link to="/" className="hover:text-white transition text-white">Home Page</Link></li></ul></div>
+          <div id="contact-info" className="text-white"><h5 className="text-netwave-cyan font-black mb-8 uppercase tracking-[0.3em] text-[10px] italic text-white">Contact </h5><div className="flex items-center gap-4 text-gray-400 text-[11px] font-bold uppercase transition hover:text-white tracking-widest italic leading-relaxed break-all text-white"><Mail size={14} className="text-netwave-cyan text-white" /><span>office@netwavesolution.com</span></div></div>
         </div>
-        <div className="max-w-[1440px] mx-auto px-6 pt-12 border-t border-white/5 text-center text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white"><p className="text-gray-700 text-[8px] md:text-[9px] uppercase tracking-[0.5em] font-bold italic text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">&copy; 2026 Netwave Solutions LLC. All Rights Reserved.</p></div>
+        <div className="max-w-[1440px] mx-auto px-6 pt-12 border-t border-white/5 text-center text-white"><p className="text-gray-700 text-[8px] md:text-[9px] uppercase tracking-[0.5em] font-bold italic text-white">&copy; 2026 Netwave Solution LLC. All Rights Reserved.</p></div>
       </footer>
     </div>
   );
