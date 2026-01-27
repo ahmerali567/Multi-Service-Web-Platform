@@ -34,7 +34,7 @@ async def handle_form(data: ContactForm):
     SMTP_SERVER = "smtp.hostinger.com"
     SMTP_PORT = 465
     SMTP_USER = "info@netwavesolution.com"
-    SMTP_PASSWORD = "Aapka_Email_Password" # Jo Hostinger par rakha hai
+    SMTP_PASSWORD = Theqwerty.5678 # Jo Hostinger par rakha hai
 
     # 3. Email Content tayyar karein
     email_body = f"Naya message mila hai:\n\nName: {data.first_name} {data.last_name or ''}\nEmail: {data.email}\nMessage: {data.message}"
