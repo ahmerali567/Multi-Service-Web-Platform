@@ -379,25 +379,42 @@ const MainPage = ({ loading, slideIndex, scrollToContact }) => (
       </div>
     </section>
 
-    {/* 8. TESTIMONIALS */}
-    <section className="max-w-7xl mx-auto px-6 py-32 text-white">
-      <div className="text-center mb-20">
-        <h2 className="text-netwave-cyan font-mono uppercase text-sm italic mb-4">Reviews</h2>
-        <h3 className="text-5xl font-black uppercase italic">Client Trust.</h3>
-      </div>
-      <div className="grid md:grid-cols-2 gap-10">
-        {[1, 2].map((i) => (
-          <div key={i} className="bg-[#0a0a0a] p-12 rounded-[3rem] border border-white/5 relative">
-            <Quote size={40} className="text-netwave-cyan/20 absolute top-8 right-8" />
-            <p className="text-gray-400 text-lg uppercase font-bold italic mb-8 leading-relaxed text-white">"The level of technical precision provided by Netwave Solution exceeded our global expectations."</p>
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-white/10 rounded-full" />
-              <div><p className="font-black uppercase italic text-white">Technical Director</p><p className="text-netwave-cyan text-[10px] font-bold uppercase tracking-widest">Global Corp</p></div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
+{/* 8. TESTIMONIALS */}
+ <section className="max-w-7xl mx-auto px-6 py-32 text-white">
+   <div className="text-center mb-20">
+     <h2 className="text-netwave-cyan font-mono uppercase text-sm italic mb-4">Reviews</h2>
+     <h3 className="text-5xl font-black uppercase italic">Client Trust.</h3>
+   </div>
+   <div className="grid md:grid-cols-2 gap-10">
+     {[
+       {
+         text: "Netwave's expertise in enterprise connectivity transformed our infrastructure. Their team is highly technical and responsive.",
+         name: "Alex Rivera",
+         title: "CEO at TechFlow Systems"
+       },
+       {
+         text: "The software development phase was seamless. They delivered a high-performance app that exceeded our engagement targets.",
+         name: "Sarah Jenkins",
+         title: "Product Manager at FinLeap"
+       }
+     ].map((review, i) => (
+       <div key={i} className="bg-[#0a0a0a] p-12 rounded-[3rem] border border-white/5 relative">
+         <Quote size={40} className="text-netwave-cyan/20 absolute top-8 right-8" />
+         <p className="text-gray-400 text-lg uppercase font-bold italic mb-8 leading-relaxed text-white">"{review.text}"</p>
+         <div className="flex items-center gap-4">
+           {/* Placeholder for Avatar */}
+           <div className="w-12 h-12 bg-netwave-cyan/20 rounded-full flex items-center justify-center font-black text-netwave-cyan">
+             {review.name.charAt(0)}
+           </div>
+           <div>
+             <p className="font-black uppercase italic text-white">{review.name}</p>
+             <p className="text-netwave-cyan text-[10px] font-bold uppercase tracking-widest">{review.title}</p>
+           </div>
+         </div>
+       </div>
+     ))}
+   </div>
+ </section>
 
     {/* 9. INQUIRY */}
     <section id="contact" className="max-w-7xl mx-auto px-6 py-24 md:py-40 text-white border-t border-white/5">
