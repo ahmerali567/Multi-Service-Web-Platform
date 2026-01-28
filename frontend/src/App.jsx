@@ -56,7 +56,7 @@ const handleSubmit = async (e) => {
   const data = Object.fromEntries(formData.entries());
 
   try {
-    const response = await fetch("http://127.0.0.1:8000/api/contact", {
+    const response = await fetch("https://netwavesolution.com/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
@@ -155,11 +155,11 @@ const ContactPage = () => (
         <div className="space-y-8 md:space-y-12">
           <div className="flex flex-col md:flex-row items-center lg:items-start gap-4 md:gap-8 group">
             <Mail className="text-netwave-cyan" size={32} />
-            <div><p className="text-gray-500 text-[10px] uppercase font-black mb-1">Email Support</p><p className="text-lg md:text-2xl font-black uppercase italic break-all text-white">ahmer@gmail.com</p></div>
+            <div><p className="text-gray-500 text-[10px] uppercase font-black mb-1">Email Support</p><p className="text-lg md:text-2xl font-black uppercase italic break-all text-white">info@netwavesolution.com</p></div>
           </div>
           <div className="flex flex-col md:flex-row items-center lg:items-start gap-4 md:gap-8 group">
             <Phone className="text-netwave-cyan" size={32} />
-            <div><p className="text-gray-500 text-[10px] uppercase font-black mb-1">Call Us</p><p className="text-lg md:text-2xl font-black uppercase italic break-all text-white">+1 (631) 402-7199</p></div>
+            <div><p className="text-gray-500 text-[10px] uppercase font-black mb-1">Call Us</p><p className="text-lg md:text-2xl font-black uppercase italic break-all text-white">+1 (346) 279-1467</p></div>
           </div>
         </div>
       </div>
@@ -497,10 +497,10 @@ function App() {
         <div className="max-w-[1440px] mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16 text-white">
           <div className="col-span-1 text-center lg:text-left text-white"><Link to="/"><img src="/logo.png" className="h-24 md:h-32 w-auto mb-8 mx-auto lg:mx-0 object-contain text-white" alt="Netwave Solution" /></Link><p className="text-gray-500 text-[10px] leading-relaxed max-w-xs uppercase tracking-tighter italic font-medium mx-auto lg:mx-0 text-white">Elite digital infrastructure and software engineering globally.</p></div>
           <div className="text-center lg:text-left text-white"><h5 className="text-netwave-cyan font-black mb-6 uppercase tracking-[0.3em] text-[10px] italic text-white">Expertise</h5><ul className="text-gray-400 space-y-4 text-[10px] font-bold uppercase tracking-widest text-white">{services.map(s => <li key={s.id}><Link to={`/service/${s.id}`} className="hover:text-white transition uppercase text-white">{s.title}</Link></li>)}</ul></div>
-          <div className="text-center lg:text-left text-white"><h5 className="text-netwave-cyan font-black mb-6 uppercase tracking-[0.3em] text-[10px] italic text-white">Corporate</h5><ul className="text-gray-400 space-y-4 text-[10px] font-bold uppercase tracking-widest text-white"><li><Link to="/about" className="hover:text-white transition text-white">About Netwave</Link></li><li><Link to="/" className="hover:text-white transition text-white">Privacy Policy</Link></li><li><Link to="/contact" className="hover:text-white uppercase transition tracking-widest text-white">Contact Us</Link></li><li><Link to="/" className="hover:text-white transition text-white">Home Page</Link></li></ul></div>
-          <div id="contact-info" className="text-white"><h5 className="text-netwave-cyan font-black mb-8 uppercase tracking-[0.3em] text-[10px] italic text-white">Contact </h5><div className="flex items-center gap-4 text-gray-400 text-[11px] font-bold uppercase transition hover:text-white tracking-widest italic leading-relaxed break-all text-white"><Mail size={14} className="text-netwave-cyan text-white" /><span>office@netwavesolution.com</span></div></div>
+          <div className="text-center lg:text-left text-white"><h5 className="text-netwave-cyan font-black mb-6 uppercase tracking-[0.3em] text-[10px] italic text-white">Corporate</h5><ul className="text-gray-400 space-y-4 text-[10px] font-bold uppercase tracking-widest text-white"><li><Link to="/about" className="hover:text-white transition text-white">About Netwave</Link></li><li><li><Link to="/contact" className="hover:text-white uppercase transition tracking-widest text-white">Contact Us</Link></li><li><Link to="/" className="hover:text-white transition text-white">Home Page</Link></li></ul></div>
+          <div id="contact-info" className="text-white"><h5 className="text-netwave-cyan font-black mb-8 uppercase tracking-[0.3em] text-[10px] italic text-white">Contact </h5><div className="flex items-center gap-4 text-gray-400 text-[11px] font-bold uppercase transition hover:text-white tracking-widest italic leading-relaxed break-all text-white"><Mail size={14} className="text-netwave-cyan text-white" /><span>info@netwavesolution.com</span></div></div>
         </div>
-        <div className="max-w-[1440px] mx-auto px-6 pt-12 border-t border-white/5 text-center text-white"><p className="text-gray-700 text-[8px] md:text-[9px] uppercase tracking-[0.5em] font-bold italic text-white">&copy; 2026 Netwave Solution LLC. All Rights Reserved.</p></div>
+        <div className="max-w-[1440px] mx-auto px-6 pt-12 border-t border-white/5 text-center text-white"><p className="text-gray-700 text-[8px] md:text-[9px] uppercase tracking-[0.5em] font-bold italic text-white">&copy;  Netwave Solution . All Rights Reserved.</p></div>
       </footer>
     </div>
   );
