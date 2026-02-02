@@ -222,6 +222,57 @@ const ServicePage = ({ id, title, navigate }) => {
         </div>
       </section>
 
+      {/* --- ENTERPRISE CONNECTIVITY SPECIFIC CONTENT --- */}
+{id === "networking" && (
+  <div className="w-full">
+    
+    {/* 1. COMPREHENSIVE SOLUTIONS CARDS */}
+    <section className="max-w-7xl mx-auto px-6 py-24 text-white border-t border-white/5">
+      <div className="mb-16 text-center lg:text-left">
+        <h2 className="text-netwave-cyan font-mono uppercase text-sm italic mb-4">Internet Services</h2>
+        <h3 className="text-5xl font-black uppercase italic text-white">Comprehensive Connectivity Solutions</h3>
+      </div>
+      
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {[
+          { title: "Dedicated Internet Access (DIA)", desc: "High-speed, symmetrical fiber circuits with 1:1 contention ratio for mission-critical operations." },
+          { title: "Broadband & Fiber-to-the-Premise", desc: "Cost-effective high-speed internet for SME via nationwide fiber networks." },
+          { title: "SD-WAN Solutions", desc: "Intelligent network management to optimize traffic across multiple connections and enhance security." },
+          { title: "Unified Communications (UCaaS)", desc: "Cloud-based VoIP and collaboration tools (Teams, Zoom integration) for modern remote and office teams." },
+          { title: "Managed Security", desc: "Enterprise-grade firewalls, threat detection, and end-to-end encryption for sensitive data." }
+        ].map((service, i) => (
+          <div key={i} className="group p-8 border border-white/5 bg-[#0a0a0a] hover:border-netwave-cyan/50 transition-all duration-500 rounded-3xl">
+            <h4 className="text-xl font-black uppercase italic mb-4 text-white group-hover:text-netwave-cyan">{service.title}</h4>
+            <p className="text-gray-400 text-sm leading-relaxed">{service.desc}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    {/* 2, 3 & 4. INDUSTRY GIANTS & PARTNERS GRID */}
+    <section className="max-w-7xl mx-auto px-6 py-24 text-white border-t border-white/5 bg-gradient-to-b from-transparent to-white/[0.02]">
+      <div className="mb-16 text-center lg:text-left">
+        <h2 className="text-netwave-cyan font-mono uppercase text-sm italic mb-4">Our Ecosystem</h2>
+        <h3 className="text-5xl font-black uppercase italic text-white">Backed by Industry Giants.</h3>
+        <p className="text-gray-500 mt-4 uppercase font-bold text-xs tracking-widest">We leverage elite global infrastructure to power your business needs.</p>
+      </div>
+
+
+
+        {/* Cloud & Hardware */}
+        <div className="space-y-6">
+          <h4 className="text-netwave-cyan font-black uppercase italic tracking-tighter text-xl border-b border-netwave-cyan/20 pb-4">Cloud & Hardware</h4>
+          <ul className="space-y-3 text-gray-400 font-bold uppercase text-[11px] tracking-widest">
+            <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-netwave-cyan rounded-full"/> Cisco Systems</li>
+            <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-netwave-cyan rounded-full"/> Fortinet Security</li>
+            <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-netwave-cyan rounded-full"/> RingCentral</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+)}
+
       <section className="bg-white/5 py-12 md:py-32 border-y border-white/5 backdrop-blur-3xl text-white">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-16 text-center text-white">
           {[{ l: "Success Rate", v: "99%" }, { l: "ROI", v: "3.5x" }, { l: "Reach", v: "Global" }, { l: "Support", v: "24/7" }].map((st, i) => (
