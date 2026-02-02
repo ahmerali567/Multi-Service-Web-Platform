@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route, Link, useLocation, useNavigate 
 const services = [
   {
     id: "networking",
-    title: "Enterprise Connectivity",
+    title: "Internet Service Connectivity",
     desc: "Uninterrupted high-speed fiber solutions designed for modern enterprise scalability and robust networking infrastructure.",
     icon: <Globe className="w-10 h-10" />,
     image: "https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -15,7 +15,7 @@ const services = [
   },
   {
     id: "mobile-app",
-    title: "Mobile App Engineering",
+    title: "Mobile App Development",
     desc: "Crafting intuitive iOS and Android experiences using cutting-edge frameworks to put your business at your customers' fingertips.",
     icon: <Smartphone className="w-10 h-10" />,
     image: "https://images.pexels.com/photos/1092671/pexels-photo-1092671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
