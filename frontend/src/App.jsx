@@ -515,7 +515,22 @@ function App() {
           <div className="col-span-1 text-center lg:text-left text-white"><Link to="/"><img src="/logo.png" className="h-24 md:h-32 w-auto mb-8 mx-auto lg:mx-0 object-contain text-white" alt="Netwave Solution" /></Link><p className="text-gray-500 text-[10px] leading-relaxed max-w-xs uppercase tracking-tighter italic font-medium mx-auto lg:mx-0 text-white">Elite digital infrastructure and software engineering globally.</p></div>
           <div className="text-center lg:text-left text-white"><h5 className="text-netwave-cyan font-black mb-6 uppercase tracking-[0.3em] text-[10px] italic text-white">Expertise</h5><ul className="text-gray-400 space-y-4 text-[10px] font-bold uppercase tracking-widest text-white">{services.map(s => <li key={s.id}><Link to={`/service/${s.id}`} className="hover:text-white transition uppercase text-white">{s.title}</Link></li>)}</ul></div>
           <div className="text-center lg:text-left text-white"><h5 className="text-netwave-cyan font-black mb-6 uppercase tracking-[0.3em] text-[10px] italic text-white">Corporate</h5><ul className="text-gray-400 space-y-4 text-[10px] font-bold uppercase tracking-widest text-white"><li><Link to="/about" className="hover:text-white transition text-white">About Netwave</Link></li><li><Link to="/contact" className="hover:text-white uppercase transition tracking-widest text-white">Contact Us</Link></li><li><Link to="/" className="hover:text-white transition text-white">Home Page</Link></li></ul></div>
-          <div id="contact-info" className="text-white"><h5 className="text-netwave-cyan font-black mb-8 uppercase tracking-[0.3em] text-[10px] italic text-white">Contact </h5><div className="flex items-center gap-4 text-gray-400 text-[11px] font-bold uppercase transition hover:text-white tracking-widest italic leading-relaxed break-all text-white"><Mail size={14} className="text-netwave-cyan text-white" /><span>info@netwavesolution.com</span></div></div>
+          <div id="contact-info" className="text-white">
+           <h5 className="text-netwave-cyan font-black mb-8 uppercase tracking-[0.3em] text-[10px] italic text-white">Contact</h5>
+           <div className="space-y-4">
+            <div className="flex items-center gap-4 text-gray-400 text-[11px] font-bold uppercase transition hover:text-white tracking-widest italic leading-relaxed break-all text-white">
+              <Mail size={14} className="text-netwave-cyan text-white" />
+              <span>info@netwavesolution.com</span>
+            </div>
+            {/* Support Email Added Here */}
+            <div className="flex items-center gap-4 text-gray-400 text-[11px] font-bold uppercase transition hover:text-white tracking-widest italic leading-relaxed break-all text-white">
+              <Mail size={14} className="text-netwave-cyan text-white" />
+              <span>support@netwavesolution.com</span>
+            </div>
+          </div>
+        </div>
+        
+          
         </div>
         <div className="max-w-[1440px] mx-auto px-6 pt-12 border-t border-white/5 text-center text-white"><p className="text-gray-700 text-[8px] md:text-[9px] uppercase tracking-[0.5em] font-bold italic text-white">&copy;  Netwave Solution . All Rights Reserved.</p></div>
       </footer>
