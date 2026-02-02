@@ -249,7 +249,7 @@ const ServicePage = ({ id, title, navigate }) => {
       </div>
     </section>
 
-    {/* 2, 3 & 4. INDUSTRY GIANTS & PARTNERS GRID */}
+    {/* 2. CLOUD & HARDWARE PARTNERS (Only this section kept) */}
     <section className="max-w-7xl mx-auto px-6 py-24 text-white border-t border-white/5 bg-gradient-to-b from-transparent to-white/[0.02]">
       <div className="mb-16 text-center lg:text-left">
         <h2 className="text-netwave-cyan font-mono uppercase text-sm italic mb-4">Our Ecosystem</h2>
@@ -257,10 +257,8 @@ const ServicePage = ({ id, title, navigate }) => {
         <p className="text-gray-500 mt-4 uppercase font-bold text-xs tracking-widest">We leverage elite global infrastructure to power your business needs.</p>
       </div>
 
-
-
-        {/* Cloud & Hardware */}
-        <div className="space-y-6">
+      <div className="flex justify-center lg:justify-start">
+        <div className="space-y-6 max-w-sm w-full">
           <h4 className="text-netwave-cyan font-black uppercase italic tracking-tighter text-xl border-b border-netwave-cyan/20 pb-4">Cloud & Hardware</h4>
           <ul className="space-y-3 text-gray-400 font-bold uppercase text-[11px] tracking-widest">
             <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-netwave-cyan rounded-full"/> Cisco Systems</li>
