@@ -230,7 +230,8 @@ const ServicePage = ({ id, title, navigate }) => {
     <section className="max-w-7xl mx-auto px-6 py-24 text-white border-t border-white/5">
       <div className="mb-16 text-center lg:text-left">
         <h2 className="text-netwave-cyan font-mono uppercase text-sm italic mb-4">Internet Services</h2>
-        <h3 className="text-5xl font-black uppercase italic text-white">Comprehensive Connectivity Solutions</h3>
+        {/* Fixed Font Size for Mobile */}
+        <h3 className="text-3xl md:text-5xl font-black uppercase italic text-white leading-tight">Comprehensive <br className="md:hidden" /> Connectivity Solutions</h3>
       </div>
       
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -249,28 +250,28 @@ const ServicePage = ({ id, title, navigate }) => {
       </div>
     </section>
 
-    {/* 2. CLOUD & HARDWARE PARTNERS (Only this section kept) */}
+    {/* 2. CLOUD & HARDWARE PARTNERS */}
     <section className="max-w-7xl mx-auto px-6 py-24 text-white border-t border-white/5 bg-gradient-to-b from-transparent to-white/[0.02]">
       <div className="mb-16 text-center lg:text-left">
         <h2 className="text-netwave-cyan font-mono uppercase text-sm italic mb-4">Our Ecosystem</h2>
-        <h3 className="text-5xl font-black uppercase italic text-white">Backed by Industry Giants.</h3>
-        <p className="text-gray-500 mt-4 uppercase font-bold text-xs tracking-widest">We leverage elite global infrastructure to power your business needs.</p>
+        {/* Fixed Font Size for Mobile */}
+        <h3 className="text-3xl md:text-5xl font-black uppercase italic text-white leading-tight">Backed by <br className="md:hidden" /> Industry Giants.</h3>
+        <p className="text-gray-500 mt-4 uppercase font-bold text-xs tracking-widest">We leverage elite global infrastructure.</p>
       </div>
 
       <div className="flex justify-center lg:justify-start">
         <div className="space-y-6 max-w-sm w-full">
-          <h4 className="text-netwave-cyan font-black uppercase italic tracking-tighter text-xl border-b border-netwave-cyan/20 pb-4">Cloud & Hardware</h4>
+          <h4 className="text-netwave-cyan font-black uppercase italic tracking-tighter text-xl border-b border-netwave-cyan/20 pb-4 text-white">Cloud & Hardware</h4>
           <ul className="space-y-3 text-gray-400 font-bold uppercase text-[11px] tracking-widest">
-            <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-netwave-cyan rounded-full"/> Cisco Systems</li>
-            <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-netwave-cyan rounded-full"/> Fortinet Security</li>
-            <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-netwave-cyan rounded-full"/> RingCentral</li>
+            <li className="flex items-center gap-2 text-white"><div className="w-1.5 h-1.5 bg-netwave-cyan rounded-full"/> Cisco Systems</li>
+            <li className="flex items-center gap-2 text-white"><div className="w-1.5 h-1.5 bg-netwave-cyan rounded-full"/> Fortinet Security</li>
+            <li className="flex items-center gap-2 text-white"><div className="w-1.5 h-1.5 bg-netwave-cyan rounded-full"/> RingCentral</li>
           </ul>
         </div>
       </div>
     </section>
   </div>
 )}
-
       <section className="bg-white/5 py-12 md:py-32 border-y border-white/5 backdrop-blur-3xl text-white">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-16 text-center text-white">
           {[{ l: "Success Rate", v: "99%" }, { l: "ROI", v: "3.5x" }, { l: "Reach", v: "Global" }, { l: "Support", v: "24/7" }].map((st, i) => (
